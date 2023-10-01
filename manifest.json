@@ -1,0 +1,20 @@
+{
+    "name": "Deal pages annotator",
+    "version": "1.0.0",
+    "description": "Annotate products that you want to buy when they are on sale",
+    "manifest_version": 3,
+    "author": "Valentin Foucher",
+    "action": {
+        "default_popup": "popup/index.html",
+        "default_title": "Deal pages annotator"
+    },
+    "icons": {
+        "16": "images/icon-16.png",
+        "32": "images/icon-32.png",
+        "128": "images/icon-128.png",
+        "256": "images/icon-256.png"
+    },
+    "permissions": [
+        "tabs"
+    ]
+}

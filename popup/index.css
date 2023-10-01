@@ -1,0 +1,99 @@
+:root {
+    --main-orange: rgb(252, 185, 75);
+    --secondary-orange: rgb(213, 154, 61);
+    --background-color: rgb(10, 0, 146);
+    --links-background-color: rgb(49, 44, 124);
+  }
+
+input, button, select, textarea, optgroup, option {
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--links-background-color);
+}
+
+#top-container {
+    float: right;
+    width: 180px;
+    padding-top: 5px;
+    text-align: center;
+    color: var(--main-orange);
+    background-color: var(--background-color);
+}
+
+h1 {
+    max-width: 100%;
+    margin: 0 0 10px 0;
+    border-bottom: 1px outset var(--main-orange);
+    cursor: default;
+    font-weight: 600;
+    font-size: medium;
+    user-select: none;
+}
+
+button {
+    cursor: pointer;
+    user-select: none;
+}
+
+a {
+    color: inherit;
+    user-select: none;
+}
+
+#annotator {
+    margin-bottom: 15px;
+    border-radius: 8pt;
+    background-color: var(--main-orange);
+    display: inline-flex;
+    align-items: center;
+    font-size: medium;
+}
+
+#annotator > img {
+    max-height: 16px;
+    max-width: 16px;
+}
+
+#list-toggle {
+    width: 100%;
+    background-color: var(--secondary-orange);
+    font-size: smaller;
+}
+
+#list-toggle > img {
+    max-height: 10px;
+    max-width: 10px;
+}
+
+#annotated-items-list {
+    clear: right;
+    padding: 0 0 0 20px;
+    margin: 0;
+}
+
+#annotated-items-list li {
+    color: hsl(0, 0%, 50%);
+}
+
+#annotated-items-list li div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: smaller;
+}
+
+#annotated-items-list li div img  {
+    max-height: 10px;
+    max-width: 10px;
+}
+
+#annotated-items-list li div img:hover {
+    cursor: pointer;
+}
